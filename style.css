@@ -1,0 +1,245 @@
+body {
+    margin: 0 auto;
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*================ HEADER ====================*/
+#header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.logo-picture {
+    max-height: 40px;
+    width: auto;
+    padding-top: 5px;
+}
+
+.sign-in {
+    display: flex;
+}
+
+.sign-in-picture {
+    max-height: 20px;
+    width: auto;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.sign-in-title {
+    color: white;
+    margin-top: 16px;
+    padding-left: 10px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding-right: 30px;
+}
+
+.nav-list li:hover a {
+    color: aqua;
+}
+
+.nav-list-mobile {
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    list-style: none;
+    background-color: black;
+    width: 100%;
+    display: block;
+    padding: 0 0px 15px 270px;
+    display: none;
+}
+
+.nav-list-mobile a {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+.nav-list-mobile li:hover a {
+    color: aqua;
+}
+
+.menu-bar-image {
+    max-height: 25px;
+    width: 30px;
+    background-color: white;
+    margin-top: 13px;
+    display: none;
+}
+
+.search-container {
+    padding-top: 10px;
+}
+
+.search-bar {
+    height: 20px;
+    width: 200px;
+}
+
+.search-img {
+    max-height: 20px;
+    width: auto;
+    position: relative;
+    right: 30px;
+    top: 7px;
+}
+
+/*=============== MOBILE VERSION=======================*/
+@media (max-width: 767.98px) {
+    .search-container, .sign-in, .nav-list {
+        display: none;
+    }
+
+    .menu-bar-image {
+        display: inline-block;
+    }
+
+    .highlight-news-container ul{
+        display: block;
+    }
+
+    .highlight-news-list li{
+        padding-bottom: 20px;
+    }
+
+    .article-list li{
+        display: block;
+    }
+}
+
+/*================ CONTENT =============*/
+#content {
+    background-color: rgb(231, 223, 223);
+    padding-top: 20px;
+}
+
+.highlight-title, .article-title {
+    padding-left: 40px;
+}
+
+.highlight-title h2, .article-title h2{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.highlight-title:hover h2, .article-title:hover h2 {
+    color: aqua;
+}
+
+.highlight-news-container {
+    margin-right: 20px;
+}
+
+.highlight-news-container ul, .article-list{
+    list-style: none;
+    margin-right: 5px;
+}
+
+.highlight-news-image {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+.highlight-news-image:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+
+.news-title {
+    text-transform: uppercase;
+    display: block;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.news-title:hover {
+    color: white;
+}
+
+/*============= ARTICLE ==================*/
+.article {
+    border-top: 2px solid black;
+    margin-top: 30px;
+}
+
+.article-title {
+    margin-bottom: -10px;
+}
+
+.article-big-box {
+    margin-right: 20px;
+}
+
+.article-list li {
+    justify-content: space-between;
+    padding-bottom: 10px;
+} 
+
+.article-image-container {
+    flex-basis: 100%;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-image:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+
+.article-more-info {
+    flex-basis: 100%;
+    padding: 10px 0px 0px 5px;
+    font-size: 16px;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+}
+
+.title:hover {
+    color:aqua;
+}
+
+.author, .date {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/*================= FOOTER ==============*/
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+}
